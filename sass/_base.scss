@@ -63,6 +63,9 @@ main{
     margin: 0 auto;
     padding-left: 10%;
     padding-right: 10%;
+    @include bp(900px){
+        padding-top: 30px;
+    }
 }
 body {
   font-size: 16px;  //pixels divided into ems
@@ -107,6 +110,12 @@ p, ul, ol, pre, table, blockquote {
   @include bp(390px){
     margin-bottom: 220px;
   }
+  @include bp(514px){
+    margin-bottom: 260px;
+  }
+  @include bp(620px){
+    margin-bottom: 290px;
+  }
 }
 
 /* Sanitation */
@@ -132,13 +141,33 @@ sub {
 
 
 
+
+// Styles for the form.  All importants to override form settings. 
+.cognito form{
+   text-align: center !important; 
+   max-width: 400px !important;
+   margin: 0 auto !important;
+   div#c-forms-form{
+    font-family: $fontB !important;
+   }
+   div.c-button-section {
+    max-width: 300px !important;
+    margin: 0 auto !important;
+        .c-action{
+            float: none !important;
+        }
+   }
+    
+}
+
+
 *, *:before, *:after{
     box-sizing: border-box;
 }
 .logoReplace a {
-    display: inline-block;
+    display: block;
+    max-width: 500px;
     height: 242px;
-    width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../img/logo-cropped.png");

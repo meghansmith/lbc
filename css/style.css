@@ -196,6 +196,9 @@ main {
   margin: 0 auto;
   padding-left: 10%;
   padding-right: 10%; }
+  @media (min-width: 900px) {
+    main {
+      padding-top: 30px; } }
 
 body {
   font-size: 16px;
@@ -239,6 +242,12 @@ p, ul, ol, pre, table, blockquote {
   @media (min-width: 390px) {
     p, ul, ol, pre, table, blockquote {
       margin-bottom: 220px; } }
+  @media (min-width: 514px) {
+    p, ul, ol, pre, table, blockquote {
+      margin-bottom: 260px; } }
+  @media (min-width: 620px) {
+    p, ul, ol, pre, table, blockquote {
+      margin-bottom: 290px; } }
 
 /* Sanitation */
 hr {
@@ -260,13 +269,25 @@ sup, sub {
 sub {
   top: 0.4em; }
 
+.cognito form {
+  text-align: center !important;
+  max-width: 400px !important;
+  margin: 0 auto !important; }
+  .cognito form div#c-forms-form {
+    font-family: Roboto, sans-serif !important; }
+  .cognito form div.c-button-section {
+    max-width: 300px !important;
+    margin: 0 auto !important; }
+    .cognito form div.c-button-section .c-action {
+      float: none !important; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
 .logoReplace a {
-  display: inline-block;
+  display: block;
+  max-width: 500px;
   height: 242px;
-  width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../img/logo-cropped.png");
