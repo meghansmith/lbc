@@ -69,7 +69,7 @@ main{
 
 }
 body {
-  font-size: 16px;  //pixels divided into ems
+  font-size: 16px;  
   line-height: 22px;
   margin: 0 auto;
   background-color: #d3d3d1;
@@ -84,7 +84,15 @@ h1 {
   margin-bottom: -420px;
   margin-top: 170px;
 
-  @include bp(491px){
+  @include bp(510px){   //when p goes to 1 line
+    margin-bottom: -380px;
+    margin-top: 140px;
+  }
+  @include bp(600px){
+    margin-bottom: -420px;
+    margin-top: 170px;
+  }
+  @include bp(698px){  //when h2 goes to 1 line
     margin-bottom: -380px;
     margin-top: 140px;
   }
