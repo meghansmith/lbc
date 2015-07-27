@@ -203,7 +203,9 @@ main {
 body {
   font-size: 16px;
   line-height: 22px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #d3d3d1;
+  background-image: url(../img/purty-wood.png); }
 
 h1, h2, h3, h4 {
   font-family: "Bree Serif", serif; }
@@ -222,6 +224,15 @@ h2 {
   line-height: 33px;
   margin-top: 33px;
   margin-bottom: 22px; }
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 32px;
+      margin-bottom: 33px;
+      margin-top: 44px; } }
+  @media (min-width: 900px) {
+    h2 {
+      font-size: 36px;
+      margin-top: 33px; } }
 
 h3 {
   font-size: 24px;
@@ -245,9 +256,15 @@ p, ul, ol, pre, table, blockquote {
   @media (min-width: 514px) {
     p, ul, ol, pre, table, blockquote {
       margin-bottom: 260px; } }
+  @media (min-width: 600px) {
+    p, ul, ol, pre, table, blockquote {
+      font-size: 18px; } }
   @media (min-width: 620px) {
     p, ul, ol, pre, table, blockquote {
       margin-bottom: 290px; } }
+  @media (min-width: 900px) {
+    p, ul, ol, pre, table, blockquote {
+      font-size: 22px; } }
 
 /* Sanitation */
 hr {
@@ -271,15 +288,19 @@ sub {
 
 .cognito form {
   text-align: center !important;
-  max-width: 400px !important;
+  max-width: 432px !important;
   margin: 0 auto !important; }
   .cognito form div#c-forms-form {
-    font-family: Roboto, sans-serif !important; }
+    font-family: Roboto, sans-serif !important;
+    font-size: 16px; }
   .cognito form div.c-button-section {
     max-width: 300px !important;
     margin: 0 auto !important; }
     .cognito form div.c-button-section .c-action {
       float: none !important; }
+    @media (min-width: 1025px) {
+      .cognito form div.c-button-section #c-submit-button:hover {
+        background-color: #ffdf10; } }
 
 *, *:before, *:after {
   box-sizing: border-box; }

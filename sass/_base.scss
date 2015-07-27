@@ -66,11 +66,15 @@ main{
     @include bp(900px){
         padding-top: 30px;
     }
+
 }
 body {
   font-size: 16px;  //pixels divided into ems
   line-height: 22px;
   margin: 0 auto;
+  background-color: #d3d3d1;
+  background-image: url(../img/purty-wood.png);
+
 }
 h1, h2, h3, h4 {
     font-family: $fontH;
@@ -90,6 +94,15 @@ h2 {
   line-height: 33px;
   margin-top: 33px;
   margin-bottom: 22px;
+  @include bp(600px){
+    font-size: 32px;
+    margin-bottom: 33px;
+    margin-top: 44px;
+  }
+  @include bp(900px){
+    font-size: 36px;
+    margin-top: 33px;
+  }
 }
 h3 {
   font-size: 24px;
@@ -113,8 +126,14 @@ p, ul, ol, pre, table, blockquote {
   @include bp(514px){
     margin-bottom: 260px;
   }
+  @include bp(600px){
+    font-size: 18px;
+  }
   @include bp(620px){
     margin-bottom: 290px;
+  }
+  @include bp(900px){
+    font-size: 22px;
   }
 }
 
@@ -145,10 +164,11 @@ sub {
 // Styles for the form.  All importants to override form settings. 
 .cognito form{
    text-align: center !important; 
-   max-width: 400px !important;
+   max-width: 432px !important;
    margin: 0 auto !important;
    div#c-forms-form{
     font-family: $fontB !important;
+    font-size: 16px;
    }
    div.c-button-section {
     max-width: 300px !important;
@@ -156,6 +176,13 @@ sub {
         .c-action{
             float: none !important;
         }
+     
+        #c-submit-button:hover{
+            @include bp(1025px){
+                background-color: #ffdf10;
+            }
+        }
+    
    }
     
 }
