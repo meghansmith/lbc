@@ -195,7 +195,8 @@ textarea {
 main {
   margin: 0 auto;
   padding-left: 10%;
-  padding-right: 10%; }
+  padding-right: 10%;
+  max-width: 900px; }
   @media (min-width: 900px) {
     main {
       padding-top: 30px; } }
@@ -256,23 +257,31 @@ h4 {
 
 p, ul, ol, pre, table, blockquote {
   margin-top: 22px;
-  margin-bottom: 200px;
+  margin-bottom: 22px;
   font-family: Roboto, sans-serif; }
+
+p.tagline {
+  margin-top: 22px;
+  margin-bottom: 200px; }
   @media (min-width: 390px) {
-    p, ul, ol, pre, table, blockquote {
+    p.tagline {
       margin-bottom: 220px; } }
   @media (min-width: 514px) {
-    p, ul, ol, pre, table, blockquote {
+    p.tagline {
       margin-bottom: 260px; } }
   @media (min-width: 600px) {
-    p, ul, ol, pre, table, blockquote {
+    p.tagline {
       font-size: 18px; } }
   @media (min-width: 620px) {
-    p, ul, ol, pre, table, blockquote {
+    p.tagline {
       margin-bottom: 290px; } }
   @media (min-width: 900px) {
-    p, ul, ol, pre, table, blockquote {
+    p.tagline {
       font-size: 22px; } }
+
+p.tagline2 {
+  text-transform: uppercase;
+  font-size: 22px; }
 
 /* Sanitation */
 hr {
@@ -309,6 +318,16 @@ sub {
     @media (min-width: 1025px) {
       .cognito form div.c-button-section #c-submit-button:hover {
         background-color: #ffdf10; } }
+  .cognito form p {
+    font-size: 16px; }
+
+.post h3 {
+  text-align: left; }
+
+.post p {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 22px; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
