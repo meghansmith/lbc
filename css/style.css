@@ -321,6 +321,19 @@ sub {
   .cognito form p {
     font-size: 16px; }
 
+.announcement {
+  border: 6px solid #ffcf00;
+  padding: 0 33px 15px 33px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-shadow: 6px 6px #17325a, -6px -6px #17325a; }
+  .announcement p {
+    text-align: left;
+    font-size: 18px; }
+
+.blogTitle {
+  text-align: left; }
+
 .post h3 {
   text-align: left; }
 

@@ -207,11 +207,22 @@ sub {
    }
     
 }
-
+//Styles for the Announcement
+.announcement {
+  border: 6px solid $gold;
+  padding: 0 33px 15px 33px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-shadow: 6px 6px $blue, -6px -6px $blue;
+  p{
+    text-align: left;
+    font-size: 18px;
+  }
+}
 
 //Styles for the blog
 .blogTitle {
-  //text-align: left;
+  text-align: left;
 }
 .post h3{
   text-align: left;
