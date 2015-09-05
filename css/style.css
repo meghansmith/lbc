@@ -196,7 +196,7 @@ main {
   margin: 0 auto;
   padding-left: 10%;
   padding-right: 10%;
-  max-width: 900px; }
+  max-width: 1000px; }
   @media (min-width: 900px) {
     main {
       padding-top: 30px; } }

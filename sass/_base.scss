@@ -35,6 +35,8 @@ video {
     vertical-align: middle;
 }
 
+
+
 fieldset {
     border: 0;
     margin: 0;
@@ -63,7 +65,7 @@ main{
     margin: 0 auto;
     padding-left: 10%;
     padding-right: 10%;
-    max-width: 900px;
+    max-width: 1000px;
     @include bp(900px){
         padding-top: 30px;
     }
